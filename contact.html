@@ -10,18 +10,17 @@
 
 <title>Contact | Umoor Sehhat</title>
 
-<link rel="stylesheet" href="New folder/style.css">
+<link rel="stylesheet" href="New folder/style.css"><a href="index.html" class="logo"><header class="navbar">
+   <a href="index.html" class="logo"> <img src="Images/Logo.png" width="100"
+    height="100" alt="Umoor Sehhat">
+</a>
 
 </head>
 
 
 <body>
 
-<header class="navbar">
 
-<div class="logo">
-    UMOOR <span>SEHHAT</span>
-</div>
 
 <nav>
 
@@ -69,16 +68,16 @@ please get in touch with us.
 
 <strong>Email</strong>
 
-<p>example@email.com</p>
+<p>umoorsehhat@gmail.com</p>
 
 </div>
 
 
 <div class="contact-item">
 
-<strong>Phone</strong>
+<strong></strong>
 
-<p>+91 00000 00000</p>
+<p></p>
 
 </div>
 
@@ -87,56 +86,68 @@ please get in touch with us.
 
 <strong>Address</strong>
 
-<p>Mumbai, Maharashtra, India</p>
+<p>Chemco House, DN Road, Mumbai</p>
 
 </div>
 
 </div>
 
+<form action="https://formspree.io/f/xrpggrnk" method="POST" class="contact-form">
 
-<form class="contact-form"
-      onsubmit="submitForm(event)">
+    <div class="form-group">
+        <label for="name">Full Name</label>
+        <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            placeholder="Enter your name"
+            required
+        >
+    </div>
 
-<label>Name</label>
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="Enter your email"
+            required
+        >
+    </div>
 
-<input
-type="text"
-placeholder="Your name"
-required>
+    <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input 
+            type="tel" 
+            id="phone" 
+            name="phone" 
+            placeholder="Enter your phone number"
+        >
+    </div>
 
+    <div class="form-group">
+        <label for="message">Message</label>
+        <textarea 
+            id="message" 
+            name="message" 
+            rows="5" 
+            placeholder="Write your message here..."
+            required
+        ></textarea>
+    </div>
 
-<label>Email</label>
-
-<input
-type="email"
-placeholder="Your email"
-required>
-
-
-<label>Subject</label>
-
-<input
-type="text"
-placeholder="Subject"
-required>
-
-
-<label>Message</label>
-
-<textarea
-rows="6"
-placeholder="Write your message..."
-required></textarea>
-
-
-<button type="submit"
-        class="btn">
-
-Send Message
-
-</button>
+    <button type="submit" class="submit-btn">
+        Send Message
+    </button>
 
 </form>
+
+
+
+
+
+
 
 
 </section>
